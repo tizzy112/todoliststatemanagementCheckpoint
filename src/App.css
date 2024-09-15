@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+div {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Save Button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Cancel Button */
+button[type="button"] {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Error Message */
+p {
+  color: #dc3545;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+span {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Completed Task */
+li.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Action Buttons */
+button {
+  font-size: 0.875rem;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+button.edit {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+button.edit:hover {
+  background-color: #e0a800;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+button.complete {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.complete:hover {
+  background-color: #218838;
+}
