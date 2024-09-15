@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import TaskList from "./component/TaskList";
 import TaskForm from "./component/TaskForm";
+import AddTask from "./component/AddTask";
+import ListTask from "./component/ListTask";
 import "./App.css";
 
 const App = () => {
@@ -59,6 +61,8 @@ const App = () => {
         onDelete={handleDeleteTask}
         onToggleComplete={handleToggleComplete}
       />
+      <AddTask />
+      <ListTask />
     </div>
   );
 };
